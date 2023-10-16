@@ -282,7 +282,9 @@ h1, h2, h3, h4, h5,
 .btn.btn-outline-white {
   border-color: #fff;
   background: transparent;
-  color: #fff; }
+  color: #fff;
+  margin-top: 30px;
+ }
   .btn.btn-outline-white:hover {
     background: #fff;
     border-color: #fff;
