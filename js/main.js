@@ -166,13 +166,45 @@ jQuery(document).ready(function($) {
 	    loop: true,
 			stagePadding: 0,
 	    margin: 0,
-	    smartSpeed: 1500,
+	    smartSpeed: 1000,
+		autoplayTimeout: 2500,
 	    autoplay: true,
 	    pauseOnHover: false,
 	    dots: true,
 	    nav: true,
 	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
 	  });
+
+	  	$('.designers-carusel').owlCarousel({
+		center: true,
+	    items: 1,
+	    loop: true,
+			stagePadding: 0,
+	    margin: 0,
+	    smartSpeed: 1000,
+		autoplayTimeout: 2000,
+	    autoplay: true,
+	    pauseOnHover: false,
+		responsive:{
+	        600:{
+	        	margin: 0,
+	        	
+	          items: 2
+	        },
+	        1000:{
+	        	margin: 0,
+	        	stagePadding: 0,
+	        	
+	          items: 2
+	        },
+	        1200:{
+	        	margin: 0,
+	        	stagePadding: 0,
+	        	
+	          items: 3
+	        }
+		    }
+		});
 	};
 	siteCarousel();
 
